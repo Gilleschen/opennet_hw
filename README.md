@@ -23,11 +23,11 @@ Requirements:
 
 ### Choose Device
 
-    pytest ./test/tests.test_opennet_hw --device="Pixel 7"
-    pytest ./test/tests.test_opennet_hw --device="iPhone SE"
+    pytest ./test/tests.test_opennet_hw --device "Pixel 7"
+    pytest ./test/tests.test_opennet_hw --device "iPhone SE"
 
 Default: `Pixel 7`.
 
-### Test Demo
+### Test Demo - iPhone SE
 
 <img src="./GIF/demo-ezgif.com-loop-count.gif" width="300" alt="Twitch Automation Test">
