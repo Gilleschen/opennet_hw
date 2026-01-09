@@ -21,6 +21,10 @@ Requirements:
 
 ## Usage
 
+### Run Pytest
+
+    pytest ./test/tests.test_opennet_hw
+
 ### Choose Device
 
     pytest ./test/tests.test_opennet_hw --device "Pixel 7"
