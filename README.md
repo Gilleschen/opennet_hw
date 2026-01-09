@@ -30,4 +30,4 @@ Default: `Pixel 7`.
 
 ### Test Demo
 
-![Twitch Automation Test](./GIF/demo-ezgif.com-loop-count.gif)
+<img src="./GIF/demo-ezgif.com-loop-count.gif" width="300" alt="Twitch Automation Test">
