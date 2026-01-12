@@ -4,8 +4,39 @@ This project uses **pytest** with **Selenium** for web UI testing on mobile emul
 
 ## Features
 
-- Choose device via command line (`Pixel 7` or `iPhone SE`)
-- `test_config` fixture to read `config.ini`
+- Use pytest as the testing framework
+- Support centralized configuration (config.ini)
+- Share test initialization and fixtures (conftest.py)
+- Separate element locators from test logic (locator.py)
+
+## Project Structure
+
+```
+.
+├── libs/
+│   └── __init__.py
+│   └── actions.py
+├── tests/
+│   └── __init__.py
+│   └── test_opennet_hw.py
+├── GIF/
+├── screenshot/
+├── config.ini
+├── locator.py
+├── conftest.py
+├── requirements.txt
+└── README.md
+```
+
+## Test Data Setup
+
+Set the test data in `config.ini` :
+
+```
+[Twitch]
+TwitchURL = https://www.twitch.tv
+GameName = StarCraft II
+```
 
 ## Install
 
@@ -27,11 +58,13 @@ Requirements:
 
 ### Choose Device
 
+Support Pixel 7 and iPhone SE
+
     pytest ./test/tests.test_opennet_hw --device "Pixel 7"
     pytest ./test/tests.test_opennet_hw --device "iPhone SE"
 
-Default: `Pixel 7`.
+Default: `Pixel 7`
 
-### Test Demo - iPhone SE
+### Test Demo
 
 <img src="./GIF/demo-ezgif.com-loop-count.gif" width="300" alt="Twitch Automation Test">
