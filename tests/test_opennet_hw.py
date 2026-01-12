@@ -9,8 +9,8 @@ class TestTwitchWeb:
 
     @pytest.fixture(autouse=True)
     def _setup(self, test_config):
-        self.twitchurl = test_config['PROD']['TwitchURL']
-        self.gamename = test_config['PROD']['GameName']
+        self.twitchurl = test_config['Twitch']['TwitchURL']
+        self.gamename = test_config['Twitch']['GameName']
         
 
     def test_01_010_010(self, web_driver_01):
